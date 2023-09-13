@@ -1,0 +1,45 @@
+<p>monthlybills works!</p>
+
+
+
+<br>
+<button (click)="logoutUser()" style=" margin-left: 95%;background-color:rgb(206, 56, 203);">Logout</button><br><br>
+<div style="background-color:rgb(39, 6, 60)"><h1 style="color:rgb(83, 183, 240);text-align: center"><br><br><h1>Welcome Admin Subhash Krishna</h1><br><br>
+    <body style="background-color:rgb(190, 233, 233);"><br>
+
+
+<!--<div style="background-color:rgb(148, 159, 172)">-->
+    <button (click)="usercrud()" style="background-color: rgb(206, 56, 203);font-weight: bold;">User CRUD</button><br><br>
+    <button (click)="admincrud()" style="background-color: rgb(206, 56, 203);font-weight: bold;">Admin CRUD</button><br><br>
+    <button (click)="todaybills()" style="background-color: rgb(206, 56, 203);font-weight: bold;">Today Bills</button><br><br>
+    <button (click)="monthlybills()" style="background-color: rgb(206, 56, 203);font-weight: bold;">Monthly Bills</button><br><br>
+<hr>
+<button (click)="getmonthlybills()" style="margin-left: 45%;background-color: rgb(206, 56, 203);font-weight: bold;">Get Monthly Bills</button><hr>
+
+<div class='table-responsive'>
+    <table class='table'>
+        <thead>
+            <tr>
+                <th>Customer Id</th>
+                <th>Customer Name</th>
+                
+                <th>Bill Amount</th>
+                <th>Bill Date</th>
+                
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let bill of temp">
+                <td>{{bill.id}}</td>
+                <td>{{bill.Name}}</td>
+                <td>{{bill.Billamount}}</td>
+                <td>{{bill.Billdate}}</td>
+              
+            </tr>
+        </tbody>
+    </table>
+
+  </div>
+
+ </body>

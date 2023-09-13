@@ -1,0 +1,18 @@
+
+<br>
+<div style="background-color:rgb(39, 6, 60)"><h1 style="color: rgb(83, 183, 240);text-align: center;font-size: 30px;">Add Items into Menu</h1><hr>
+  <body style="background-color: rgb(190, 233, 233);"><br><br>
+<form #userform="ngForm" (ngSubmit)="Additems(userform)" [formGroup]="reactiveForm1">
+  <div>
+    <label for="Itemname" style="color: rgb(206, 56, 203);font-weight: bold;">Enter Item Name</label><br>
+    <input type="text" id="Itemname" formControlName="Itemname"><br>
+  </div>
+    <div>
+        <label for="Itemprice" style="color: rgb(206, 56, 203);font-weight: bold;">Enter Item Price</label><br>
+        <input type="text" id="Itemprice" formControlName="Itemprice"><br><br>
+    </div>
+    <div>
+      <input type="submit" value="Add to Menu" [disabled]="reactiveForm1.invalid" style="background-color: aquamarine;">
+    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  
+  </form></body>

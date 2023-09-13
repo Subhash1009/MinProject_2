@@ -1,0 +1,259 @@
+{
+  "Admin": [
+    {
+      "Username": "Subhash",
+      "Password": "subhash"
+    }
+  ],
+  "User": [
+    {
+      "Username": "Ben",
+      "Email": "barry@hcl.com",
+      "Password": "ben",
+      "Phonenumber": "09618174824",
+      "Name": "Ben",
+      "id": 1
+    },
+    {
+      "Username": "Harry",
+      "Email": "harry@hcl.com",
+      "Password": "harry",
+      "Phonenumber": "9618174824",
+      "Name": "Harry Potter",
+      "id": 2
+    },
+    {
+      "Username": "Hermione",
+      "Email": "Hermione@hcl.com",
+      "Password": "1234",
+      "Phonenumber": "1231231",
+      "Name": "Hermione",
+      "id": 3
+    },
+    {
+      "Username": "Swaroop",
+      "Email": "swaroop@hcl.com",
+      "Password": "123",
+      "Phonenumber": "9849058834",
+      "Name": "Swaroop",
+      "id": 4
+    },
+    {
+      "Username": "Lokesh",
+      "Email": "lokesh@hcl.com",
+      "Password": "1234",
+      "Phonenumber": "9849059934",
+      "Name": "Lokesh",
+      "id": 5
+    },
+    {
+      "Username": "Ron Weaseley",
+      "Email": "Ron @hcl.com",
+      "Password": "1234",
+      "Phonenumber": "9849987934",
+      "Name": "Ron",
+      "id": 6
+    },
+    {
+      "Username": "Draco",
+      "Email": "Draco@hcl.com",
+      "Password": "1234",
+      "Phonenumber": "8679059934",
+      "Name": "Draco",
+      "id": 7
+    },
+    {
+      "Username": "Sirius Black",
+      "Email": "Sirius@hcl.com",
+      "Password": "1234",
+      "Phonenumber": "8679059934",
+      "Name": "Sirius",
+      "id": 8
+    },
+    {
+      "Username": "Subhash",
+      "Email": "golla.subhashkrishna@hcl.com",
+      "Password": "subhash",
+      "Phonenumber": "09618174824",
+      "Name": "Subhash",
+      "id": 9
+    },
+    {
+      "Username": "Krishna",
+      "Email": "krishna@hcl.com",
+      "Password": "1234",
+      "Phonenumber": "7569128069",
+      "Name": "Krishna",
+      "id": 10
+    },
+    {
+      "Username": "Test",
+      "Email": "test@gmail.com",
+      "Password": "test",
+      "Phonenumber": "12345678",
+      "Name": "Krish",
+      "id": 11
+    },
+    {
+      "Username": "Mahanth",
+      "Email": "mahanth050@gmail.com",
+      "Password": "123",
+      "Phonenumber": "234532344",
+      "Name": "Mahanth",
+      "id": 12
+    }
+  ],
+  "Menulist": [
+    {
+      "Itemname": "Mutter Paneer",
+      "Itemprice": "200",
+      "id": 1,
+      "Image": "assets/images/1.webp"
+    },
+    {
+      "Itemname": "Mushroom 65",
+      "Itemprice": "200",
+      "id": 2,
+      "Image": "assets/images/2.webp"
+    },
+    {
+      "Itemname": "Veg Munchurian",
+      "Itemprice": "250",
+      "id": 3,
+      "Image": "assets/images/3.webp"
+    },
+    {
+      "Itemname": "Chicken Munchurian",
+      "Itemprice": "400",
+      "id": 4,
+      "Image": "assets/images/4.webp"
+    },
+    {
+      "Itemname": "Mutton Curry",
+      "Itemprice": "500",
+      "id": 5,
+      "Image": "assets/images/5.webp"
+    },
+    {
+      "Itemname": "Mutton Fry",
+      "Itemprice": "400",
+      "id": 6,
+      "Image": "assets/images/6.webp"
+    },
+    {
+      "Itemname": "Chicken Curry",
+      "Itemprice": "200",
+      "id": 7,
+      "Image": "assets/images/7.webp"
+    },
+    {
+      "Itemname": "Fish Curry",
+      "Itemprice": "200",
+      "id": 8,
+      "Image": "assets/images/8.webp"
+    },
+    {
+      "Itemname": "Chicken Biryani Family Pack",
+      "Itemprice": "600",
+      "id": 9,
+      "Image": "assets/images/9.webp"
+    },
+    {
+      "Itemname": "Chicken Dum Biryani",
+      "Itemprice": "400",
+      "id": 10,
+      "Image": "assets/images/10.webp"
+    },
+    {
+      "Itemname": "Mughlai Biryani",
+      "Itemprice": "400",
+      "id": 11,
+      "Image": "assets/images/11.webp"
+    },
+    {
+      "Itemname": "Mutton Fry Biryani",
+      "Itemprice": "500",
+      "id": 12,
+      "Image": "assets/images/12.webp"
+    },
+    {
+      "Itemname": "Fish Biryani",
+      "Itemprice": "500",
+      "id": 13,
+      "Image": "assets/images/13.webp"
+    },
+    {
+      "Itemname": "Chocolate Ice Cream",
+      "Itemprice": "200",
+      "id": 14,
+      "Image": "assets/images/14.webp"
+    },
+    {
+      "Itemname": "Dry Fruit Falooda",
+      "Itemprice": "400",
+      "id": 1,
+      "Image": "assets/images/15.webp"
+    }
+  ],
+  "Cart": [
+    {
+      "Itemname": "Chicken Munchurian",
+      "Itemprice": "400",
+      "Itemquantity": "1",
+      "Totalitemprice": "400",
+      "id": 4
+    },
+    {
+      "Itemname": "\tDry Fruit Falooda",
+      "Itemprice": "400",
+      "Itemquantity": "1",
+      "Totalitemprice": "400",
+      "id": 5
+    },
+    {
+      "Itemname": ";lm",
+      "Itemprice": ";mk;k",
+      "Itemquantity": "9",
+      "Totalitemprice": "34",
+      "id": 6
+    }
+  ],
+  "TodayBills": [
+    {
+      "Name": "Subhash",
+      "Billamount": "400",
+      "Billdate": "1-1-23",
+      "id": 1
+    },
+    {
+      "Name": "Subhash",
+      "Billamount": "400",
+      "Billdate": "1-1-23",
+      "id": 2
+    },
+    {
+      "Name": "Mahanth",
+      "Billamount": "12345",
+      "Billdate": "12-10-22",
+      "id": 3
+    }
+  ],
+  "MonthlyBills": [
+    {
+      "Name": "Subhash",
+      "Billamount": "400",
+      "Billdate": "1-1-23",
+      "id": 1
+    },
+    {
+      "Name": "Mahanth",
+      "Billamount": "12345",
+      "Billdate": "12-10-22",
+      "id": 2
+    }
+  ],
+  "Paybill": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

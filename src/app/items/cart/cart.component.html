@@ -1,0 +1,39 @@
+
+
+<button (click)="logoutUser()" style="margin-left: 97%;background-color: rgb(206, 56, 203);font-weight: bolder;height: 40px; width: 80px;cursor:pointer;border-radius: 15px;">Logout</button><br><br>
+<div style="background-color:rgb(39, 6, 60)"><br><br><h1 style="color: rgb(83, 183, 240);text-align: center;font-size: 30px;"><br><br><h1>Welcome {{session}}</h1><br><br><hr>
+    <br><body style="background-color: rgb(190, 233, 233);"><br><br>
+    <button (click)="Itemslist()" style="margin-left: 28.5%;background-color: rgb(206, 56, 203);font-weight: bolder;cursor:pointer;padding-left: 20px;padding-right: 20px;border-radius: 10px;height:35px;">Menu</button>
+    <button (click)="Cart()" style="margin-left: 26.5%;background-color: rgb(206, 56, 203);font-weight: bolder;cursor:pointer;padding-left: 20px;padding-right: 20px;border-radius: 10px;height:35px;">Cart</button>
+
+<br><br><br>
+
+<button type="button" (click)="getcart()" style="margin-left: 0%;background-color: rgb(206, 56, 203);font-weight: bold;cursor: pointer;">View Cart</button><br><br>
+<button type="button" (click)="addtocart()" style="margin-left: 0%;background-color: rgb(206, 56, 203);font-weight: bold;cursor: pointer;">Add Items</button> <br><br>
+<button type="button" (click)="Paybill()" style="margin-left: 0%;background-color: rgb(206, 56, 203);font-weight: bold;cursor: pointer;">Paybill</button><br><br>
+
+
+<div class='table-responsive'>
+    <table class='table'>
+        <thead>
+            <tr>
+                <th>Item Id</th>
+                <th>Item Name</th>
+                <th>Item Price</th>
+                <th>Item Quantity</th> 
+                <th>Total Item Price</th> 
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let itemlist of temp">
+                <td>{{itemlist.id}}</td>
+                <td>{{itemlist.Itemname}}</td>
+                <td>{{itemlist.Itemprice}}</td>
+                <td>{{itemlist.Itemquantity}}</td>
+                <td>{{itemlist.Totalitemprice}}</td>
+                <td><button type="button" (click)="deletecart(itemlist.id)" style="background-color: aquamarine;cursor: pointer;">Delete</button></td>
+        </tbody>
+    </table>
+</div>
+</body>

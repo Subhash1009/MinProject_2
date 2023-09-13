@@ -1,0 +1,31 @@
+<br>
+<button (click)="logoutUser()" style="margin-left: 97%;background-color: rgb(206, 56, 203);font-weight: bolder;height: 40px; width: 80px;cursor:pointer;">Logout</button><br><br>
+<div style="background-color:rgb(39, 6, 60)"><h1 style="color: rgb(83, 183, 240);text-align: center;font-size: 30px;"><br><br><h1>Welcome {{session}}</h1><br><br>
+    <br><body style="background-color: rgb(190, 233, 233);"><br><br>
+    <button (click)="Itemslist()" style="margin-left:0%;background-color: rgb(206, 56, 203);font-weight: bolder;cursor:pointer;padding-left: 20px;padding-right: 20px;border-radius: 10px;height:35px;">Menu</button><br><br>
+    <button (click)="Cart()" style="margin-left: 0%;background-color: rgb(206, 56, 203);font-weight: bolder;cursor:pointer;padding-left: 20px;padding-right: 20px;border-radius: 10px;height:35px;">Cart</button>
+
+<br><br>
+
+<button type="button" (click)="getmenulist()"  style="margin-left: 0%;background-color: rgb(206, 56, 203);font-weight: bolder;cursor:pointer;padding-left: 20px;padding-right: 20px;border-radius: 10px;height:35px;">View Menu</button><br><br>
+<div class='table-responsive'>
+    <table class='table'>
+        <thead>
+            <tr>
+                <th>Item Id</th>
+                <th>Item Name</th>
+                <th>Image</th>
+                <th>Item Price</th>  
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let itemlist of temp">
+                <td>{{itemlist.id}}</td>
+                <td>{{itemlist.Itemname}}</td>
+                <td><img src={{itemlist.Image}} alt="image" style="width: 100px; height: 70px;"></td>
+                <td>{{itemlist.Itemprice}}</td> 
+            </tr>
+        </tbody>
+    </table>
+  </div>
+</body>

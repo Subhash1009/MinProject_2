@@ -1,0 +1,47 @@
+<body style="background-color: rgb(190, 233, 233);"><br><br>
+  <button type="button" (click)="getmenulist()" style="margin-left: 46%;background-color: rgb(206, 56, 203);font-weight: bold;cursor: pointer;">View Menu</button>
+<div class='table-responsive'>
+    <table class='table'>
+        <thead>
+            <tr>
+                <th>Item Id</th>
+                <th>Item Name</th>
+                <th>Image</th>
+                <th>Item Price</th>  
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let itemlist of temp">
+                <td>{{itemlist.id}}</td>
+                <td>{{itemlist.Itemname}}</td>
+                <td><img src={{itemlist.Image}} alt="image" style="width: 100px; height: 70px;"></td>
+                <td>{{itemlist.Itemprice}}</td> 
+            </tr>
+        </tbody>
+    </table>
+  </div><br><hr></body>
+  <div style="background-color:rgb(39, 6, 60)"><h1 style="color: rgb(83, 183, 240);text-align: center;font-size: 30px;">Add items into cart</h1>
+    <body style="background-color: rgb(190, 233, 233);"><br><br>
+<form #userform="ngForm" (ngSubmit)="Additems(userform)" [formGroup]="reactiveForm1">
+  <div>
+    <label for="Itemname" style="color: rgb(206, 56, 203);font-weight: bold;">Item Name</label><br>
+    <input type="text" id="Itemname" formControlName="Itemname"><br>
+  </div>
+    <div>
+        <label for="Itemprice" style="color: rgb(206, 56, 203);font-weight: bold;">Item Price</label><br>
+        <input type="text" id="Itemprice" formControlName="Itemprice"><br>
+    </div>
+    <div>
+        <label for="Itemquantity" style="color: rgb(206, 56, 203);font-weight: bold;">Item Quantity</label><br>
+        <input type="text" id="Itemquantity" formControlName="Itemquantity"><br>
+      </div>
+        <div>
+            <label for="Totalitemprice" style="color: rgb(206, 56, 203);font-weight: bold;">Total Item Price</label><br>
+            <input type="text" id="Totalitemprice" formControlName="Totalitemprice"><br><br>
+        </div>
+    <div>
+      <input type="submit" value="Add Item" [disabled]="reactiveForm1.invalid" style="background-color:aquamarine;cursor: pointer;">
+      <button type="button" (click)="viewcart()" style="margin-left: 2%;background-color: rgb(206, 56, 203);font-weight: bold;cursor: pointer;">Go to Cart</button><br><br>     
+    </div>
+  </form>
+    </body>

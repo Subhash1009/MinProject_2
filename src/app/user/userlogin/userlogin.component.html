@@ -1,0 +1,18 @@
+<br>
+<div style="background-color:rgb(39, 6, 60)"><h1 style="color: rgb(83, 183, 240);text-align: center;font-size: 30px;"><br><br><h1>Welcome User</h1><br><br>
+<hr>
+<body style="background-color: rgb(190, 233, 233);"><br><br>
+<form #userlogin="ngForm"(ngSubmit)="UserLoginData(userlogin)" [formGroup]="reactiveFormlog">
+    <div>
+        <label for="Username" style="color: rgb(206, 56, 203);font-weight: bold;">Username</label><br>
+        <input type="text" name="Username" ngModel formControlName="Username"><br>
+    </div><br>
+    <div>
+        <label for="Password" style="color: rgb(206, 56, 203);font-weight: bold;">Password</label><br>
+        <input type="password" name="Password" ngModel formControlName="Password"><br>
+    </div><br>
+    <div>
+        <input type="submit" value="Login" [disabled]="reactiveFormlog.invalid" style="background-color:aquamarine;"><br>
+    </div> <br><br><br><br><br><br><br><br>
+</form>
+</body>

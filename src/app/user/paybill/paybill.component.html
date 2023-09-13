@@ -1,0 +1,49 @@
+
+<button (click)="logoutUser()" style="margin-left: 97%;background-color: rgb(206, 56, 203);font-weight: bolder;height: 40px; width: 80px;cursor:pointer;border-radius: 15px;">Logout</button><br><br>
+<div style="background-color:rgb(39, 6, 60)"><h1 style="color: rgb(22, 167, 216);text-align: center;font-size: 30px;font-weight: 750;">Add details into the Pay Bill</h1></div><hr>
+
+<button type="button" (click)="getcart()" style="margin-left: 45%;background-color: rgb(206, 56, 203);font-weight: bold;cursor: pointer;">View Cart</button>
+<div class='table-responsive'>
+  <table class='table'>
+      <thead>
+          <tr>
+              <th>Item Id</th>
+              <th>Item Name</th>
+              <th>Item Price</th>
+              <th>Item Quantity</th> 
+              <th>Total Item Price</th> 
+              <th>Action</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let itemlist of temp">
+              <td>{{itemlist.id}}</td>
+              <td>{{itemlist.Itemname}}</td>
+              <td>{{itemlist.Itemprice}}</td>
+              <td>{{itemlist.Itemquantity}}</td>
+              <td>{{itemlist.Totalitemprice}}</td>
+              <td><button type="button" (click)="deletecart(itemlist.id)" style="cursor: pointer;">Delete</button></td>
+      </tbody>
+  </table>
+</div><hr>
+<br>
+
+<form #userform="ngForm" (ngSubmit)="Addbill(userform)" [formGroup]="reactiveForm1">
+  <div>
+    <label for="Name" style="color: rgb(206, 56, 203);font-weight: bolder; margin-left: 0%; font-size: 20px;">Customer Name</label><br>
+    <input type="text" id="Name" formControlName="Name" ><br><br>
+  </div>
+ 
+    <div>
+        <label for="Billamount" style="color: rgb(206, 56, 203);font-weight: bolder; margin-left: 0%; font-size: 20px;">Customer Bill</label><br>
+        <input type="text" id="Billamount" formControlName="Billamount" ><br><br>
+    </div>
+    <div>
+        <label for="Billdate" style="color: rgb(206, 56, 203);font-weight: bolder; margin-left: 0%; font-size: 20px;">Bill date</label><br>
+        <input type="text" id="Billdate" formControlName="Billdate"><br><br>
+    </div>
+    <div>
+      <input type="submit" value="Pay Bill" [disabled]="reactiveForm1.invalid" style="background-color: aquamarine;border-radius: 10px;border-width: 5px;margin-left: 0%;color: aliceblue;padding-left: 20px;padding-right: 20px;cursor: pointer;">
+    </div>
+</form>
+

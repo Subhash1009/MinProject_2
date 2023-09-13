@@ -1,0 +1,43 @@
+
+
+<button (click)="logoutUser()" style=" margin-left: 97%;background-color: rgb(206, 56, 203);">Logout</button><br><br>
+<div style="background-color:rgb(39, 6, 60)"><br><br><h1 style="color:rgb(83, 183, 240);text-align: center"><br><br><h1>Welcome Admin Subhash Krishna</h1><br><br>
+    <body style="background-color:rgb(190, 233, 233);"><br>
+
+
+<!--<div style="background-color:rgb(148, 159, 172)">-->
+    <button (click)="usercrud()" style="background-color: rgb(206, 56, 203);font-weight: bold;">User CRUD</button><br><br>
+    <button (click)="admincrud()" style="background-color: rgb(206, 56, 203);font-weight: bold;">Admin CRUD</button><br><br>
+    <button (click)="todaybills()" style="background-color: rgb(206, 56, 203);font-weight: bold;">Today Bills</button><br><br>
+    <button (click)="monthlybills()" style="background-color: rgb(206, 56, 203);font-weight: bold;">Montly Bills</button><br><br>
+<hr>
+<button (click)="getmenulist()" style="margin-left: 45%;background-color: rgb(206, 56, 203);font-weight: bold;">Get Menu list</button><hr>
+<button type="button" (click)="additems()" style="margin-left: 46%;background-color: rgb(206, 56, 203);font-weight: bold;">Add Items</button><hr>
+<div class='table-responsive'>
+    <table class='table'>
+        <thead>
+            <tr>
+                <th>Item Id</th>
+                <th>Item Name</th>
+                <th>Item Price</th>
+                <th>Image</th>
+                <th>Action</th>
+                
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of temp">
+                <td>{{item.id}}</td>
+                <td>{{item.Itemname}}</td>
+                <td>{{item.Itemprice}}</td>
+                <td><img src = {{item.Image}} alt="Image Not Found" style="height: 100px;width: 100px;"></td>
+
+                <td><button type="button" (click)="delete(item.id)" style="background-color: aquamarine;">Delete</button></td>
+               
+            </tr>
+        </tbody>
+    </table>
+
+  </div>
+ </body>

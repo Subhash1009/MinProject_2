@@ -1,0 +1,43 @@
+<br>
+<h1 style="color: rgb(83, 183, 240);text-align: center;font-size: 40px;"><br><br><h1> Registration</h1><br><br>
+<hr>
+
+<body style="background-color: rgb(131, 163, 163);">
+  <form #userform="ngForm" (ngSubmit)="registerData(userform)" [formGroup]="reactiveForm1">
+
+    <div>
+      <label for="Name" style="color: rgb(206, 56, 203);font-weight: bold;">Name</label><br>
+      <input type="text" id="Name" formControlName="Name"><br>
+    </div>
+    <div>
+      <label for="Username" style="color: rgb(206, 56, 203);font-weight: bold;">Username</label><br>
+      <input type="text" id="Username" formControlName="Username"><br>
+    </div>
+    <div>
+      <label for="Password" style="color: rgb(206, 56, 203);font-weight: bold;">Password</label><br>
+      <input type="password" id="Password" formControlName="Password"><br>
+    </div>
+    <div>
+      <label for="Email" style="color: rgb(206, 56, 203);font-weight: bold;">Email</label><br>
+      <input type="email" id="Email" formControlName="Email"><br>
+    </div>
+
+    <div>
+      <label for="Phonenumber" style="color: rgb(206, 56, 203);font-weight: bold;">Phonenumber</label><br>
+      <input type="text" id="Phonenumber" formControlName="Phonenumber"><br>
+    </div>
+    <!---<div>
+      <label for="Age" style="color: rgb(161, 105, 15);font-weight: bold;">Age</label><br>
+      <input type="Age" id="Age" formControlName="Age"><br>
+    </div>-->
+    <!---<div>
+        <label for="Address" style="color: rgb(161, 105, 15);font-weight: bold;">Address</label><br>
+        <input type="text" id="Address" formControlName="Address"><br><br>
+    </div>--->
+    <div>
+      <input type="submit" value="Register" [disabled]="reactiveForm1.invalid"style="background-color: aquamarine;">
+    </div>
+
+
+  </form>
+</body>
